@@ -1,0 +1,285 @@
+<!doctype html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Bootstrap Stater</title>
+
+    <!-- Icons for this template -->
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Stylesheet -->
+    <!-- build:css -->
+    <link href="assets/css/app.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+
+<body>
+
+  <div class="page__inner bg-light">
+    <div class="page__content">
+      <header class="page-header bg-white">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Физлицам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Юрлицам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Карта дел</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ЧаВо</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Блог</a>
+                </li>
+              </ul>
+              <div class="contact-box my-2 my-lg-0">
+                <a class="contact-box__phone" href="tel:+79112567649">8(911)-256-76-49</a>
+                <a class="contact-box__link" href="#">Ваш город: Санкт-Петербург</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main role="main">
+        <section class="page-part page-part--geography">
+          <div class="container">
+            <div class="page-part__header text-center">
+              <h2 class="dark-color">География наших дел</h2>
+              <p class="gray-color">Мы работаем по всей России.<br>На этой странице можно проверить статус наших дел.</p>
+            </div>
+            <img class="img-fluid" src="assets/img/russia_map.svg" alt="">
+          </div>
+        </section>
+        <section class="page-part bg-white page-part--filter">
+          <div class="container">
+            <div class="page-part__header">
+              <nav class="d-none d-sm-block">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item breadcrumb-item--home"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                  <li class="breadcrumb-item active" aria-current="page">География дел</li>
+                </ol>
+              </nav>
+              <h2 class="dark-color">Фильтр дел</h2>
+              <p class="gray-color">Фильтр поможет найти дело по широкому кругу критериев.</p>
+            </div>
+
+            <form class="filter-cases" action="">
+              <div class="d-flex align-items-center mb-4">
+                <div class="btn-group btn-group-toggle mr-auto" data-toggle="buttons">
+                  <label class="btn btn-outline-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Все
+                  </label>
+                  <label class="btn btn-outline-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Физлица
+                  </label>
+                  <label class="btn btn-outline-secondary">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Юрлица
+                  </label>
+                  <label class="btn btn-outline-secondary">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Ип
+                  </label>
+                </div>
+                <a href="#" class="btn filter-cases__reset"><i class="fa fa-times" aria-hidden="true"></i></a>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6 col-lg-3">
+                  <select class="custom-select custom-select--lg">
+                    <option selected>Статус дела</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="form-group col-xs-12 col-md-6 col-lg-3">
+                  <input class="form-control form-control-lg" type="text" placeholder="Поиск по ИНН">
+                </div>
+                <div class="form-group col-xs-12 col-md-6 col-lg-3">
+                  <input class="form-control form-control-lg" type="text" placeholder="2015-2017">
+                </div>
+                <div class="form-group col-xs-12 col-md-6 col-lg-3">
+                  <button class="btn btn-primary btn-xl btn-block" type="button"><i class="fa fa-search">&nbsp;</i>Найти</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </section>
+        <section class="page-part page-part--cases">
+          <div class="container">
+            <div class="container-md">
+              <table class="table mb-5 table--responsive">
+                <thead>
+                  <tr>
+                    <th class="table__status">Статус</th>
+                    <th>Должник</th>
+                    <th>Категория</th>
+                    <th>ИНН</th>
+                    <th>Город</th>
+                  </tr>
+                </thead>
+                <tdody>
+                  <tr>
+                    <td class="table__status" data-label="Статус"><i class="table-icon table-icon--circular"></i></td>
+                    <td data-label="Должник">Иванов Иван Иванович</td>
+                    <td data-label="Категория">Физлицо</td>
+                    <td data-label="ИНН">254374629417</td>
+                    <td data-label="Город">Москва</td>
+                  </tr>
+                  <tr>
+                    <td class="table__status" data-label="Статус"><i class="table-icon table-icon--chechmark"></i></td>
+                    <td data-label="Должник">ООО “Петрушка”</td>
+                    <td data-label="Категория">Юрлицо</td>
+                    <td data-label="ИНН">4927482639</td>
+                    <td data-label="Город">Санкт-Петербург</td>
+                  </tr>
+                  <tr>
+                    <td class="table__status" data-label="Статус"><i class="table-icon table-icon--circular"></i></td>
+                    <td data-label="Должник">Петров Петр Петрович</td>
+                    <td data-label="Категория">ИП</td>
+                    <td data-label="ИНН">5038372395729</td>
+                    <td data-label="Город">Сыктывкар</td>
+                  </tr>
+                  <tr>
+                    <td class="table__status" data-label="Статус"><i class="table-icon table-icon--circular"></i></td>
+                    <td data-label="Должник">Сидоров Сидор Сидорович</td>
+                    <td data-label="Категория">Физлицо</td>
+                    <td data-label="ИНН">6582375921743</td>
+                    <td data-label="Город">Иваново</td>
+                  </tr>
+                  <tr>
+                    <td class="table__status" data-label="Статус"><i class="table-icon table-icon--circular"></i></td>
+                    <td data-label="Должник">Иванов Иван Иванович</td>
+                    <td data-label="Категория">Физлицо</td>
+                    <td data-label="ИНН">254374629417</td>
+                    <td data-label="Город">Москва</td>
+                  </tr>
+                  <tr>
+                    <td class="table__status" data-label="Статус"><i class="table-icon table-icon--chechmark"></i></td>
+                    <td data-label="Должник">ООО “Петрушка”</td>
+                    <td data-label="Категория">Юрлицо</td>
+                    <td data-label="ИНН">4927482639</td>
+                    <td data-label="Город">Санкт-Петербург</td>
+                  </tr>
+                  <tr>
+                    <td class="table__status" data-label="Статус"><i class="table-icon table-icon--circular"></i></td>
+                    <td data-label="Должник">Петров Петр Петрович</td>
+                    <td data-label="Категория">ИП</td>
+                    <td data-label="ИНН">5038372395729</td>
+                    <td data-label="Город">Сыктывкар</td>
+                  </tr>
+                  <tr>
+                    <td class="table__status" data-label="Статус"><i class="table-icon table-icon--chechmark"></i></td>
+                    <td data-label="Должник">Сидоров Сидор Сидорович</td>
+                    <td data-label="Категория">Физлицо</td>
+                    <td data-label="ИНН">6582375921743</td>
+                    <td data-label="Город">Иваново</td>
+                  </tr>
+                  <tr>
+                    <td class="table__status" data-label="Статус"><i class="table-icon table-icon--circular"></i></td>
+                    <td data-label="Должник">Иванов Иван Иванович</td>
+                    <td data-label="Категория">Физлицо</td>
+                    <td data-label="ИНН">254374629417</td>
+                    <td data-label="Город">Москва</td>
+                  </tr>
+                  <tr>
+                    <td class="table__status" data-label="Статус"><i class="table-icon table-icon--circular"></i></td>
+                    <td data-label="Должник">Сидоров Сидор Сидорович</td>
+                    <td data-label="Категория">Физлицо</td>
+                    <td data-label="ИНН">6582375921743</td>
+                    <td data-label="Город">Иваново</td>
+                  </tr>
+                </tdody>
+              </table>
+              <p class="text-center">
+                <button type="button" class="btn btn-lg btn-outline-primary">Загрузить еще</button>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="page-part page-part--feedback bg-primary">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8">
+                <h2>Нужна бесплатная консультация арбитражного управляющего?</h2>
+                <p>Узнайте о перспективах своего дела бесплатно и без обязательств.</p>
+                <a href="#" class="btn btn-xl btn-outline-light">Получить бесплатную консультацию</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-lg-8">
+              <ul class="nav nav--footer">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Физлицам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Юрлицам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Карта дел</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ЧаВо</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Блог</a>
+                </li>
+              </ul>
+              <p class="copyright text-center text-lg-left"><span class="d-block d-xl-inline">© 2017, Банкротство-СПБ.РФ. Все права защищены.</span><span class="d-block d-xl-inline">Федеральный реестр сведений о банкротстве</span></p>
+            </div>
+            <div class="col-xs-12 col-lg-4 text-center text-lg-right">
+              <div class="contact-box contact-box--footer">
+                <a class="contact-box__phone" href="tel:+79112567649">8(911)-256-76-49</a>
+                <a class="contact-box__link" href="#">получить бесплатную консультацию</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/vendor/jquery.slim.min.js"></script>
+<script src="assets/js/vendor/popper.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<!-- build:js -->
+<script src="assets/js/app.js"></script>
+<!-- endbuild -->
+</body>
+</html>

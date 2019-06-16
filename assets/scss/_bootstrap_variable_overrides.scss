@@ -1,0 +1,34 @@
+// Bootstrap overrides variables
+
+$font-family-sans-serif:      'Museo Sans Cyrl', Arial, sans-serif;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+// Color system
+
+$gray-100: #f8fafc;
+$blue:    #4da1ff;
+$secondary:   #939ea7;
+
+$h2-font-size:                36px;
+
+// Table
+
+$table-bg:                    #fff ;
+$table-color:                 #929aa8 ;
+$table-head-bg:               #f3f6f9;
+$table-border-color:          #f4f7f9 ;
+
+$table-cell-padding:          .95rem ;
+
+// Form
+
+$input-bg:  #f8fafc;
+$input-border-color:  #eaf0f5;
+$input-color:  #949ba4;
+$input-placeholder-color:  #949ba4;
